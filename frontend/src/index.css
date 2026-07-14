@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-yz-red: #D81E2A;
+  --color-yz-dark: #0f0f0f;
+  --color-yz-card: rgba(255,255,255,0.97);
+  --color-yz-nav: rgba(15,15,15,0.96);
+}
+
+html, body {
+  min-height: 100%;
+  background-color: #0f0f0f;
+  background-image: url('/yazaki-bg.png');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(160deg, rgba(0,0,0,0.45) 0%, rgba(15,10,10,0.58) 100%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}

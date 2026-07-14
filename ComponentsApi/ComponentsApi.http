@@ -1,0 +1,6 @@
+@ComponentsApi_HostAddress = http://localhost:5064
+
+GET {{ComponentsApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
